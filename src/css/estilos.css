@@ -1,0 +1,145 @@
+body{
+    font-family: 'poppins', sans-serif;
+    max-width: 1280px;
+    margin: 0 auto;
+    background-color: #000000;
+    color: #000000;
+}
+
+body.modo-escuro{
+    background-color: white;
+    color: black;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+}
+
+
+img{
+    width: 400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header .logo,
+header .imagem-botao{
+    width: 40px;
+    transition: 0.2 ease-in-out;
+}
+
+header #botao-alterar-tema{
+    background: none;
+    border: none;
+    
+}
+
+header .logo:hover,
+header .imagem-botao:hover,
+main .cartao-kart:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+main{
+    padding: 25px;
+}
+
+main .listagem-drivers{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+main .cartao-kart{
+    background-image: url(../imagens/fundo.jpg);
+    background-size: cover;
+    background-position: bottom;
+    width: 250px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    border-radius: 15px;
+    transition: 0.2 ease-in-out;
+}
+
+main .cartao-kart:hover{
+    background-color: #96d9d9;
+}
+
+.modo-escuro .cartao-kart{
+    background-color: white;
+}
+
+main .cartao-kart .informacoes{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #333333;
+    border-radius: 10px;
+}
+
+main .cartao-kart .informacoes span{
+    padding: 5px;
+    text-transform: uppercase;
+    font-size: 17px;
+}
+
+main .cartao-kart .gif{
+    width: 90px;
+    height: 90px;
+}
+
+main .cartao-kart .tipos{
+    display: flex;
+    gap: 15px;
+}
+
+main .cartao-kart .tipo{
+    padding: 8px;
+    border-radius: 10px;
+}
+
+.one{
+    background-color: red;
+}
+
+.two{
+    background-color: purple;
+}
+
+.three{
+    background-color: orange;
+}
+
+.four{
+    background-color: pink;
+}
+
+.five{
+    background-color: green;
+}
+
+.six{
+    background-color: blue ;
+}
+
+.seven{
+    background-color: brown;
+}
+
+.eight{
+    background-color: white;
+}
+
+main .descricao{
+        max-height: 80px;
+        overflow-y: scroll;
+        font-size: 14px;
+        padding-right: 10px;
+}
